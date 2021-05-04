@@ -1,0 +1,382 @@
+.flex-container{
+    display:flex;
+    align-items: center;
+    //justify-content: space-around;
+
+    @media screen and (max-width:53.125em){
+                
+        flex-direction: column;
+    }
+    
+
+    &::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -12rem;
+        height: 65rem;
+        width: 55rem;
+        background: linear-gradient(180deg, var(--light-magenta) -30%, var(--light-violet));
+        border-radius: 0 0 30rem 30rem;
+        z-index: 1;
+
+        @media screen and (max-width:77em){
+            width: 49rem;  
+            height:57rem
+        }
+        @media screen and (max-width:65em){
+                
+            width: 40rem;  
+            height:52rem; 
+        }
+        @media screen and (max-width:53.125em){
+            left: -14rem; 
+            width: 44rem;  
+            height:52rem;   
+            
+        }
+        @media screen and (max-width:31.25em){
+            left: -20rem;    
+            
+        }
+
+
+    }
+
+   
+}
+.phone-section{
+    flex:0 0 45%;
+
+   
+}
+.phone{
+    position:relative;
+    z-index: 10;
+    width:26rem;
+    border:1rem solid var(--white);
+    border-radius: 4rem;
+    overflow: hidden;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, .3);
+    background:var(--light-grayish-violet);
+    margin: 9rem 0 0 36.5rem;
+
+    @media screen and (max-width:77em){
+        margin: 5rem 0 0 31.5rem;   
+    }
+    @media screen and (max-width:65em){
+                
+        margin: 5rem 0 0 22rem; 
+    }
+    @media screen and (max-width:53.125em){
+                
+        margin: 5rem auto; 
+    }
+    
+
+   
+
+    &__header{
+        display:flex;
+        background: linear-gradient(to right, var(--light-violet),var(--light-magenta));
+        color: var(--light-grayish-violet);
+        height: 7rem;
+        align-items: center;
+        border-radius: 0  0rem  .7rem .7rem;
+        
+        &::before{
+            content:'';
+            position:absolute;
+            top:0rem;
+            left:5rem;
+            width:13.5rem;
+            height:1.9rem;
+            background: var(--white);
+            border-radius: 0  0rem  1.4rem 1.4rem;
+            z-index:100;
+        }
+    }
+
+    &__header-group{
+        display:flex;
+        align-items: center;
+        padding-top: 1.5rem;
+        
+    }
+
+    &__arrow{
+        fill:var(--white);
+        width:.8rem;
+        height:.8rem;
+        margin-left:1.5rem;
+        margin-right: .8rem;
+        
+        
+    }
+
+    &__user-image{
+        width:3rem;
+        //height:4rem;
+        border:.2rem solid var(--white);
+        border-radius: 50%;
+        margin-right:.5rem;
+        
+       
+    }
+    &__user-name{
+        font-size:1.2rem;
+        padding-bottom: .3rem;;
+    }
+    &__avalability{
+        font-size:.7rem;
+        color:var(--grayish-blue);
+    }
+
+    &__dots{
+        fill:var(--white);
+        width:1rem;
+        height:1rem;
+        margin-left:7rem;
+        
+        
+        
+        
+    }
+
+    &__body{
+        padding:1rem .8rem;
+
+    }
+
+    &__chat-transparent{
+        font-size:.7rem;
+        color:var(--moderate-violet);
+        font-weight: 600;
+        width:12.4rem;
+        background: var(--chat-background-1);
+        opacity:.7 ;
+        margin-bottom: .7rem;
+        padding:1rem 1.3rem 1rem 1rem;
+        border-radius:.9rem .9rem .9rem .4rem;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0, .3);
+
+    }
+
+    &__dog-photo{
+       margin-left:9.7rem;
+       margin-bottom: .7rem;
+       
+    }
+
+    &__dog-image{
+        width:3.6rem;
+        border-radius:1rem;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0, .3);
+
+        &:not(:last-child){
+            margin-right:.4rem;
+        }
+    }
+
+    &__chat-white{
+        font-size:.7rem;
+        color:var(--desaturated-violet);
+        font-weight: 600;
+        width:12.4rem;
+        background: var(--white);
+        margin-bottom: .7rem;
+        padding:1rem;
+        border-radius:.9rem .9rem .4rem .9rem;
+        margin-left:9.8rem;
+        opacity: .7;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0, .3);
+
+        &--small{
+            font-size:.7rem;
+            color:var(--desaturated-violet);
+            font-weight: 600;
+            width:9rem;
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius:1.5rem .9rem .4rem 1.5rem;
+            padding:1rem;
+            margin-left:13.2rem;
+            opacity: .7;
+            box-shadow: 0 .1rem .3rem rgba(0,0,0, .3);
+        }
+
+    }
+
+    &__chat-gradient{
+        font-size:.9rem;
+        color:var(--white);
+        width:18rem;
+        background: linear-gradient(to right, var(--light-magenta) , var(--light-violet));
+        margin-bottom: .7rem;
+        padding:.8rem;
+        border-radius:1.2rem 1.2rem 1.2rem .5rem;
+        box-shadow: 0 .1rem .3rem rgba(0,0,0, .3);
+        display:flex;
+        align-items: center;
+
+        &--svg{
+            padding-top:.8rem;
+        }
+
+       &--radio{
+           
+            margin-right:1rem;
+            width:1.2rem;
+            height:1.2rem;
+           
+        }
+       
+        &--price1{
+            padding-left:3rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        &--price2{
+            padding-left:4.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+
+    }
+    &__type{
+        margin-top:2rem;
+        
+        
+        background: var(--white);
+        border-radius:4rem;
+        padding:.6rem 0 .6rem 1.5rem;
+        font-size: .9rem;
+        color:var(--grayish-blue);
+        
+    }
+
+    &__message{
+        display:flex;
+        align-items: center;
+        
+        &--arrow-round{
+            width:2rem;
+            height:2rem;
+            margin-left: 11rem;
+            fill:var(--desaturated-violet);
+        }
+    }
+}
+
+.info{
+    &__box{
+        width:50%;
+        margin-left: 8rem;
+        @media screen and (max-width:77em){
+            width:65%;
+        }
+        @media screen and (max-width:53.125em){
+            margin-left:0;
+            margin:0 auto;
+        }
+
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 65rem;
+            width: 40rem;
+            background: var(--chat-background);
+            border-radius: 30rem 0 0 0;
+            z-index: 1;
+            @media screen and (max-width:77em){
+                width: 33rem;  
+                height:58rem;
+                
+            }
+            @media screen and (max-width:65em){
+                
+                width: 28rem;  
+                height:54rem; 
+                bottom:initial;
+            }
+    
+        }
+        
+
+
+        &--heading{
+            position:relative;
+            color:var(--desaturated-violet);
+            margin-top: 9rem;
+            margin-bottom: 2rem;
+            z-index:10;
+            
+            font-size: 4rem;
+            @media screen and (max-width:65em){
+                
+               font-size:3.3rem; 
+            }
+            @media screen and (max-width:53.125em){
+                font-size:3.5rem;  
+                font-weight: 600; 
+                margin-top: 4rem;
+                text-align: center;
+                font-weight: 600;
+                
+            }
+            @media screen and (max-width:31.25em){
+                font-size:3.1rem;  
+                
+                
+            }
+            @media screen and (max-width:22em){
+                font-size:2.7rem;  
+                font-weight: 700;
+                
+                
+            }
+            @media screen and (max-width:18.5em){
+                font-size:2.3rem;  
+                
+                
+            }
+            
+        }
+
+        &--paragraph{
+            position:relative;
+            font-size: 1.5rem;
+            line-height: 2;
+            color:var(--grayish-violet);
+            z-index:10;
+
+            @media screen and (max-width:65em){
+                
+                font-size:1.3rem; 
+            }
+
+            @media screen and (max-width:53.125em){
+                font-size:1.5rem;  
+                text-align: center;
+                
+                
+            }
+            @media screen and (max-width:31.25em){
+                font-size:1.3rem;  
+                
+                
+            }
+            @media screen and (max-width:18.5em){
+                font-size:1.2rem;  
+                
+                
+            }
+        }
+    }
+}
+

@@ -1,0 +1,42 @@
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+:root{
+
+    //COLORS//
+
+    --pale-violet:hsl(276, 100%, 81%);
+    --moderate-violet:hsl(276, 55%, 52%);
+    --dark-violet:hsl(272, 46%, 93%);
+    --desaturated-violet:hsl(271, 36%, 24%);
+    --grayish-violet:hsl(270, 7%, 64%);
+    --light-violet: hsl(264, 100%, 61%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --grayish-blue:hsl(206, 6%, 79%);
+    --light-magenta:hsl(293, 100%, 63%);
+    --very-light-magenta : hsl(289, 100%, 72%);
+    --white:hsl(0, 0%, 100%);
+    --chat-background:hsla(273, 100%, 98%, 0.979);
+    --chat-background-1:hsla(271, 55%, 87%, 0.678);
+}
+
+html{
+    box-sizing:border-box;
+    font-size: 62.5%; // this makes 1rem == 10px rather than 16px
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    background:var(--light-grayish-violet);
+    height:100vh;
+}
